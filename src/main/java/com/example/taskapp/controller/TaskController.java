@@ -15,9 +15,9 @@ public class TaskController {
      *
      * (1) create a new Schema "taskapp_db" in your mySQL Workbench
      *
-     * (2) change password and username und application.properties file
+     * (2) change password, username and database "taskapp_db" in the application.properties file
      *
-     * (3) run the app & open in broser http://localhost:8000
+     * (3) run the app & open in broser http://localhost:8080
      *
      * (4) congrats! Your App is Running
      *
@@ -33,7 +33,7 @@ public class TaskController {
      *
      */
     @RequestMapping(value = {"/tasks", "/"}, method = RequestMethod.GET)
-    public String dashboard(Model model) {
+    public String dashboard() {
         return "index";
     }
 
